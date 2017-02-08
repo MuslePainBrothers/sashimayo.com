@@ -1,5 +1,9 @@
 from django.views import generic
 
 
-class IndexView(generic.TemplateView):
-    template_name = "index.html"
+class TopView(generic.TemplateView):
+    template_name = "top.html"
+
+
+class ProductView(generic.TemplateView):
+    template_name = "product.html"
