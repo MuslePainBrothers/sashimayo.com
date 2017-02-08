@@ -6,6 +6,6 @@ class ProductAdmin(admin.ModelAdmin):
     fieldsets = [
         ('title', {'fields': ['title']}),
         ('description', {'fields': ['description']}),
-        ('category', {'fields': ['category']}),
+        ('tags', {'fields': ['tags']}),
     ]
 admin.site.register(Product, ProductAdmin)
