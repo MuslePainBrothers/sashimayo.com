@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ProductPage</title>
-</head>
-<body>
-    <h1>ProductPage</h1>
+{% extends "base.html" %}
+
+{% block title %}ProductPage{% endblock title %}
+
+{% block content %}
+<h1>ProductPage</h1>
 
     {% for product, list_tag in products %}
 
@@ -19,6 +17,4 @@
 
         <br>
     {% endfor %}
-
-</body>
-</html>
+{% endblock %}
