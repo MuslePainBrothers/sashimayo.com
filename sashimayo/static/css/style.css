@@ -1,0 +1,55 @@
+
+body {
+    color: white;
+    background: url(../img/main2.jpg) center center / cover no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+h1{
+    display: block;
+    font-size: 60px;
+    color: white;
+}
+
+.jumbotron{
+    color: black;
+    /*opacity: 0.8;*/
+    background:rgba(255,255,255,0.8);
+}
+
+.display{
+    /*display: flex;*/
+    /*top: 50%;*/
+    /*margin-top: -50px ;*/
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.sample {
+    width:200px; height:100px;
+    margin:5px; padding:10px; border:1px solid black;
+    background-color:#eeeeee;
+    font-size: 30px;
+       /*display: flex;*/
+    /*flex−wrap: wrap;*/
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item_product{
+    /*display: flex;*/
+    /*flex−wrap: wrap;*/
+    width: calc(33.3% - 10px);
+  margin: 5px;
+    margin-top: 30px;
+
+}
+
+button{
+    color: black;
+}
