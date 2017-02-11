@@ -4,25 +4,19 @@
 
 {% block content %}
 <div class="jumbotron">
-    <h1 class="text-center">ProductPage</h1>
+    <h1 class="text-center">Product</h1>
 
     <div class="main">
-        <!--<ul>-->
             {% for product, list_tag in products %}
-
                 <div class="item_product">
-                    <!--<li>-->
                     title = {{ product.title }}<br>
                     description = {{ product.description }}<br>
-
                     tag =
                     {% for tag in list_tag %}
                         {{ tag }}
                     {% endfor %}<br>
-                    <!--</li>-->
                 </div>
             {% endfor %}
-        <!--</ul>-->
     </div>
 </div>
 {% endblock %}

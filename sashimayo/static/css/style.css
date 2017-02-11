@@ -1,4 +1,3 @@
-
 body {
     color: white;
     background: url(../img/main2.jpg) center center / cover no-repeat fixed;
@@ -13,28 +12,30 @@ h1{
     color: white;
 }
 
-.jumbotron{
+button{
     color: black;
-    /*opacity: 0.8;*/
-    background:rgba(255,255,255,0.8);
 }
 
+/*top画面*/
 .display{
-    /*display: flex;*/
-    /*top: 50%;*/
-    /*margin-top: -50px ;*/
-    margin: auto;
     text-align: center;
     padding-top: 150px;
 }
 
-.sample {
-    width:200px; height:100px;
-    margin:5px; padding:10px; border:1px solid black;
+.menu_box {
+    width:200px;
+    height:100px;
+    margin:5px;
+    padding:10px;
+    border:1px solid black;
     background-color:#eeeeee;
     font-size: 30px;
-       /*display: flex;*/
-    /*flex−wrap: wrap;*/
+}
+
+/*product画面*/
+.jumbotron{
+    color: black;
+    background:rgba(255,255,255,0.8);
 }
 
 .main{
@@ -42,14 +43,7 @@ h1{
     flex-wrap: wrap;
 }
 .item_product{
-    /*display: flex;*/
-    /*flex−wrap: wrap;*/
     width: calc(33.3% - 10px);
-  margin: 5px;
+    margin: 5px;
     margin-top: 30px;
-
-}
-
-button{
-    color: black;
 }
