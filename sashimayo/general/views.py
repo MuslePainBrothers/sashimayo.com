@@ -23,3 +23,7 @@ class ProductView(generic.TemplateView):
 
         context["products"] = zip(Product.objects.all(), list_tags)
         return context
+
+
+class ProfileView(generic.TemplateView):
+    template_name = "profile.html"

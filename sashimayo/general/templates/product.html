@@ -1,24 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ProductPage</title>
-</head>
-<body>
-    <h1>ProductPage</h1>
+{% extends "base.html" %}
 
-    {% for product, list_tag in products %}
+{% block title %}ProductPage{% endblock title %}
 
-        title = {{ product.title }}<br>
-        description = {{ product.description }}<br>
+{% block content %}
+<div class="jumbotron">
+    <h1 class="text-center">Product</h1>
 
-        tag =
-        {% for tag in list_tag %}
-            {{ tag }}
-        {% endfor %}<br>
-
-        <br>
-    {% endfor %}
-
-</body>
-</html>
+    <div class="main">
+            {% for product, list_tag in products %}
+                <div class="item_product">
+                    title = {{ product.title }}<br>
+                    description = {{ product.description }}<br>
+                    tag =
+                    {% for tag in list_tag %}
+                        {{ tag }}
+                    {% endfor %}<br>
+                </div>
+            {% endfor %}
+    </div>
+</div>
+{% endblock %}

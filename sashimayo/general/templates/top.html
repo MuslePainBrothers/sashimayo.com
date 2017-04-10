@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TopPage</title>
-</head>
-<body>
-    <h1>TopPage</h1>
-    <a href="{%url 'general:product' %}">ProductPage</a>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}sashimayo.com{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center">sashimayo.com</h1>
+
+  <div class="display">
+      <button type="button" class="menu_box" onclick="location.href='/product'">Product</button>
+      <button type="button" class="menu_box" onclick="location.href='/profile'">Profile</button>
+      <button type="button" class="menu_box"
+              onclick="location.href='https://github.com/MuslePainBrothers'">GitHub</button>
+  </div>
+
+</div>
+{% endblock %}
+
